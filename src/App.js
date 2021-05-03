@@ -5,16 +5,17 @@ import Header from './Componenets/Header';
 import IncomeExpense from './Componenets/IncomeExpense';
 
 import TransactionList from './Componenets/TransactionList';
+import { GlobalProvider } from './context/GlobalState';
 
 function App() {
   return (
-    <div >
+    <GlobalProvider >
       <Header />
       <Balance />
       <IncomeExpense />
       <TransactionList />
       <AddTransaction />
-    </div>
+    </GlobalProvider>
   );
 }
 
